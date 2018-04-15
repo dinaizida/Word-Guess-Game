@@ -53,15 +53,75 @@ var game = {
          document.querySelector("#lossesCount").innerHTML = lossesCount;
          document.querySelector("#winlosses").style.display = 'inline-block';
     },
-    //  check if userGuess is a letter
+    
+      // add letter buttons/key board
+      addLetterButtons: function() {
+        // add letter buttons
+        var html = "<ul>";
+        for (var i = 0; i < this.letters.length; i++) {
+            html += '<li id="li-' + this.letters[i] + '" class="liActive"';
+            html += 'onclick="game.letterClick(\'' + this.letters[i] + '\')">';
+            html += this.letters[i] + "</li>";
+        };
+        html += "</ul>";
+        document.querySelector("#keyboardBtn").innerHTML = html;
+    },
 
+    // random word by computer   
+    guessAWord: function() {
+        var computerRandomNumber = Math.floor(Math.random() * this.words.length);
+        return this.words[computerRandomNumber];
+        console.log(this.computerWord);
+    },
+
+    //length of the word
+    calculateWordLength: function() {
+        return this.computerWord.length;
+    },
+
+    // create a string with all dashes 
+    createWordToPrint: function() {
+        var word = "";
+        for (var i = 0; i < this.computerWordLength; i++) {
+            word += '_ ';
+        }
+        this.wordWithMatchedLetters = word;
+        return word;
+    },
+
+
+     // check to see if user already tried to clik on keyboard
+    userGuessTried: function() {
+        if (this.userGuessesArray.length !== 0) {
+            var result = this.userGuessesArray.indexOf(this.userGuess) < 0 ? false : true;
+            return result;
+        } else {
+            return false;
+        }
+    },
+
+    //check if input is a letter
     isAlphabet: function() {
         var pattenRE = /[a-z]/i;
         return this.userGuess.match(pattenRE);
     },
 
-    toStartGame: function(){
 
-    }
+
+
+
+
+
+   
 }
      
+// loading on event
+window.onload = function(event){
+    game.addLetterButtons();
+    game.toStart();
+
+    // document.onkeyup = function(element){
+    //     game.userGuess = element.key.toUpperCase();
+    //     game.toStartGame();
+    // }
+}
