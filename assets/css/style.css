@@ -1,14 +1,21 @@
-body{
-    line-height: 1.5em;
+body {
+    line-height: 150%;
+    color: #ddd;
+    background-color: darkgrey;
 }
 
 
 
-/* keyboard letters buttons */
+
+
+
+
+
+/* letter buttons */
 
 .keyboard .keyboard-body {
     padding: 5px 0px 0px 5px;
-    background-color: light grey;
+    background-color: white;
 }
 
 .keyboard {
@@ -17,7 +24,8 @@ body{
 }
 
 .liActive,
-.liDisabled {
+.liDisabled,
+.liSelected {
     width: 26px;
     height: 26px;
     line-height: 26px;
@@ -26,7 +34,7 @@ body{
     margin: 5px;
     text-align: center;
     font-weight: bold;
-    border: 1px solid lightcoral;
+    border: 1px solid #5bbbb9;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     display: inline-block;
@@ -38,10 +46,44 @@ body{
 }
 
 .liActive {
-    background-color: #3399ff;
+    background-color: #33ffc2;
 }
 
 .liDisabled {
     background-color: #888;
     border: 1px solid #898;
+}
+.liSelected {
+    background-color: red;
+}
+
+
+
+/* media query */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (max-width: 414px) {
+    .liActive,
+    .liDisabled,
+    .liSelected {
+        width: 22px;
+        height: 22px;
+        line-height: 20px;
+        margin: 4px;
+    }
+    .keyboard {
+        margin: 15px;
+    }
+    .keyboard .keyboard-body {
+        padding: 12px 0px 0px 12px;
+        background-color: #222;
+    }
+    
+   
+   
 }
