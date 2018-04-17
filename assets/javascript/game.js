@@ -101,6 +101,10 @@ createWordToPrint: function() {
     this.wordWithMatchedLetters = word;
     return word;
 },
+ // print a word into <span > element by ID 
+ printWord: function(word) {
+    document.querySelector("#word").innerHTML = word;
+},
 
     
     
