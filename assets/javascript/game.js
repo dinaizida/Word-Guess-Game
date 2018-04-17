@@ -80,6 +80,27 @@ var game = {
         html += "</ul>";
         document.querySelector("#keyboardBtn").innerHTML = html;
     },
+// random word to be picked by computer   
+computerWordChoice: function() {
+    var computerRandomNumber = Math.floor(Math.random() * this.words.length);
+    return this.words[computerRandomNumber];
+   
+},
+
+//length of the word
+calculateWordLength: function() {
+    return this.computerWord.length;
+},
+
+// create a string with all dashes 
+createWordToPrint: function() {
+    var word = "";
+    for (var i = 0; i < this.computerWordLength; i++) {
+        word += '_ ';
+    }
+    this.wordWithMatchedLetters = word;
+    return word;
+},
 
     
     
