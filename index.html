@@ -19,17 +19,20 @@
 
 
     <body>
+    <div class ="wrapper"> 
+    <div class ="row backMap">  
+    <div class = "col-md-10 col-lg-10 col-sm-10">
         <div class="container">
             <!--  header section-->
             <nav class="navbar navbar-default">
-                <h1>Word Guess Game</h1>
+                <h1 id="gameTitle" >Word Guess Game</h1>
             </nav>
         </div>
         <!-- Main section -->
         <div class="container">
             <!-- instructions for a game  -->
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 margin-top-down">
                     <p id="instruction">
                         Press Any Letter to Start.
                         <br> Current Category : <span class="category"> US States</span>
@@ -42,7 +45,7 @@
 
                 <div class="col-md-12">
 
-                    <div class="col-md-7 col-sm-8 margin-top-20 ">
+                    <div class="col-md-7 col-sm-8 margin-top-down ">
                         <div id="gameStatus"></div>
                         <div id="winlosses">
                             <div>Wins : <span id="winsCount"></span></div>
@@ -81,12 +84,12 @@
                     window.onload = init;
                 </script>
     
-                <!-- <div class="social">
+                <div class="social">
                     <a href="https://github.com/dinaizida" target="_blank"><i style="font-size:16px" class="fa">&#xf092;</i></a>
                     <a href="https://www.linkedin.com/in/DinaRudenko/" target="_blank"><i style="font-size:16px" class="fa">&#xf08c;</i></a>
                     <a href="https://stackoverflow.com/users/6179580/dina" target="_blank"><i style="font-size:16px" class="fa">&#xf16c;</i></a>
                     <a href="https://www.facebook.com/businessonwww/" target="_blank"><i style="font-size:16px" class="fa">&#xf082;</i></a>
-                </div> -->
+                </div>
             </div>
         </div>
     
@@ -96,7 +99,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+</div>
+</div> 
+</div>
 </body>
 
 </html>
