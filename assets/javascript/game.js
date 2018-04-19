@@ -212,15 +212,29 @@ var game = {
             document.querySelector("#winlosses").style.display = 'none';
 
             if (this.winOrLose) {
-                html += '<div class="message">You Won!</div>';
+                html += '<div class="message">You Won!</div>' + '<button id="clear">START GAME</button>';
+
+                var main = $("body");
+                var btns = main.find("#clear");
+                main.on("click", "#clear", function() {
+                    game.loadKeyboard();
+                });
+
             } else {
-                html += '<div class="message">You Lost!</div>';
+                html += '<div class="message">You Lost!</div>' + '<button id="clear">START GAME</button>';
             }
-            html += '<div class="load">New Word is loading. ';
-            html += ' <i class="fa fa-spinner fa-spin" aria-hidden="true"></i> </div>';
+
+            var main = $("body");
+                var btns = main.find("#clear");
+                main.on("click", "#clear", function() {
+                    game.loadKeyboard();
+                });
+
+            // html += '<div class="load">New Word is loading. ';
+            // html += ' <i class="fa fa-spinner fa-spin" aria-hidden="true"></i> </div>';
 
             document.querySelector("#gameStatus").innerHTML = html;
-            timeOver = setTimeout(this.loadKeyboard.bind(this), 5000);
+            // timeOver = setTimeout(this.loadKeyboard.bind(this), 5000);
             // pause screen for 5 sec-to display on the screen the result of the game before starting loading a new one
 
         }
