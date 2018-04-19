@@ -212,7 +212,7 @@ var game = {
             document.querySelector("#winlosses").style.display = 'none';
 
             if (this.winOrLose) {
-                html += '<div class="message">You Won!</div>' + '<button id="clear">START GAME</button>';
+                html += '<div class="message">You Won!</div>' + '<button id="clear" type="button" class="btn btn-raised btn-secondary">Start Game</button>';
 
                 var main = $("body");
                 var btns = main.find("#clear");
@@ -221,7 +221,7 @@ var game = {
                 });
 
             } else {
-                html += '<div class="message">You Lost!</div>' + '<button id="clear">START GAME</button>';
+                html += '<div class="message">You Lost!</div>' + '<br>' + '<button id="clear" type="button" class="btn btn-raised btn-secondary">Start Game</button>';
             }
 
             var main = $("body");

@@ -9,10 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+ 
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- <link rel="shortcut icon" href="assets/images/favicon.png" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
     <title>Word Guess Game</title>
 </head>
 
@@ -20,48 +21,60 @@
 
     <body>
     <div class ="wrapper"> 
-    <div class ="row backMap">  
-    <div class = "col-md-10 col-lg-10 col-sm-10">
-        <div class="container">
-            <!--  header section-->
-            <nav class="navbar navbar-default">
-                <h1 id="gameTitle" >Word Guess Game</h1>
-            </nav>
-        </div>
+    <div class ="row">  
+    <div class = "col-md-12 col-lg-12 col-sm-12 col-xs-12">
+      
+        
         <!-- Main section -->
-        <div class="container">
+        <div class="container-flex">
             <!-- instructions for a game  -->
+
+            <div class = "row headerTitle">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <h1>Word Guess</h1>
+        
+            <h1>Game</h1>
+            
+            
+            </div>
+           </div>
+
             <div class="row">
-                <div class="col-md-12 margin-top-down">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                     <p id="instruction">
+                           
                         Press Any Letter to Start.
-                        <br> Current Category : <span class="category"> US States</span>
+                        <br>Category : <span class="category"> US States</span>
                         <br><span id="warningMessage"></span>
                     </p>
                 </div>
             </div>
             <!-- game status information  -->
-            <div class="row">
+            <div class="row statistic">
 
                 <div class="col-md-12">
 
-                    <div class="col-md-7 col-sm-8 margin-top-down ">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div id="gameStatus"></div>
                         <div id="winlosses">
                             <div>Wins : <span id="winsCount"></span></div>
                             <div>Losses : <span id="lossesCount"></span></div>
                         </div>
-                        <div>Number of Guesses Remaining : <span id="numberGuesses">10</span></div>
+                        <div id="styleNumber">Number of Guesses Remaining : <span id="numberGuesses">10</span></div>
+                        <br>
+                        <br>
                         <div id="gameWord"><b>Word : &nbsp;&nbsp;<span id="word"></span></b></div>
                     </div>
+                    
                 </div>
 
             </div>
             <!-- buttons with letters- keyboard-->
-            <div class="col-md-5">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <div class="keyboard panel-default">
                     <div class="keyboard-body">
                         <div id="keyboardBtn"></div>
+                        
                     </div>
                 </div>
             </div>

@@ -1,62 +1,86 @@
 body {
     line-height: 150%;
+    background-image: url(../images/background1.png);
+    background-repeat:no-repeat; 
+    background-size:cover; 
+    background-position:center;
     color: #ddd;
     text-align: center;
+    font-family: 'Noto Sans', sans-serif, 'Roboto', sans-serif;
 }
-.wrapper{
-    background-image: url(../images/backgroundMap.png);
-    background-size: cover;
-    margin: 0 auto; 
+img {
     width: 100%;
-    height: auto;   
+    height: auto;
 }
-#gameTitle{
-    margin-top: 4%;
-    text-align: center;
-}
-.margin-top-down{
+
+
+.margin-top-down {
     margin-top: 10%;
 }
 #instruction {
     text-align: center;
-    margin-bottom: 25px;
+    
 }
-
+.statistic {
+    background-color: rgb(238, 230, 230);
+    opacity: 0.8;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    -webkit-box-shadow: inset 3px 6px 51px -12px rgba(0,0,0,1);
+    -moz-box-shadow: inset 3px 6px 51px -12px rgba(0,0,0,1);
+    box-shadow: inset 3px 6px 51px -12px rgba(0,0,0,1);
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+}
 #gameWord {
     margin-bottom: 6px;
 }
 
+
 #gameWord,
 #word,
 #instruction {
-    color: #ffa500;
+    color: #6b5496;
 }
 
 #instruction {
     padding-bottom: 5px;
-    border-bottom: 1px solid #4aaaa5;
+    
 }
-
+#winlosses {
+    color: #d15079; 
+}  
+#styleNumber {
+    color: #d15079; 
+}
 #word {
-    font-size: 1.7em;
-}
+    
+    font-size: 2.5em;
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
 
+}
+#clear {
+    margin: 10px;
+}
 .category {
-    color: #3399ff;
+    color: #6b5496;
 }
 
 .load {
-    color: #ff4000;
+    color: #6f77b2;
 }
 
-.fa-spinner {
-    font-size: 25px;
-    margin-left: 20px;
-}
+
 
 .message {
-    font-size: 25px;
-    color: #40ff00;
+    font-size: 1.7em;
+    color: red;
     font-weight: bold;
 }
 
@@ -64,9 +88,11 @@ body {
 
 /* header */
 
-.navbar-default {
-    
-    text-shadow: 2px 2px 4px #99cc00;
+ .headerTitle {
+    font-size: 1em;
+    text-align: center;
+    color: #d15079;
+    text-shadow: 2px 2px 4px gray;
 }
 
 h1 {
@@ -76,31 +102,40 @@ h1 {
 
 /* letter buttons */
 
-.keyboard .keyboard-body {
-    padding: 5px 0px 0px 5px;
-    background-color: white;
-}
 
-.keyboard {
-    border: 1px solid #444;
-    margin-right: 5px;
+.keyboard-body {
+    border: 1px white;
+    padding: 20px 10px 10px 10px;
+    margin: 10% 20% 30% 20%;
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+    -webkit-box-shadow: 5px 5px 17px -4px rgba(0,0,0,0.52);
+    -moz-box-shadow: 5px 5px 17px -4px rgba(0,0,0,0.52);
+    box-shadow: 5px 5px 17px -4px rgba(0,0,0,0.52);
+    margin-bottom: 30px;
+    
+   
 }
 
 .liActive,
 .liDisabled,
 .liSelected {
-    width: 26px;
-    height: 26px;
-    line-height: 26px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     cursor: pointer;
-    color: #000;
+    color: whitesmoke;
     margin: 5px;
     text-align: center;
-    font-weight: bold;
-    border: 1px solid #5bbbb9;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     display: inline-block;
+    -webkit-box-shadow: 5px 5px 17px -4px rgba(0,0,0,0.52);
+    -moz-box-shadow: 5px 5px 17px -4px rgba(0,0,0,0.52);
+    box-shadow: 5px 5px 17px -4px rgba(0,0,0,0.52);
 }
 
 .liActive li:hover {
@@ -109,15 +144,15 @@ h1 {
 }
 
 .liActive {
-    background-color: #33ffc2;
+    background-color: #666666;
 }
 
 .liDisabled {
-    background-color: #888;
-    border: 1px solid #898;
+    background-color: lightgrey;
+    
 }
 .liSelected {
-    background-color: red;
+    background-color: #6f77b2;
 }
 
 /*footer*/
@@ -149,13 +184,23 @@ a:visited {
 
 /* media query */
 
-@media (min-width: 1200px) {
+/* 
+ @media (max-width: 1200px) {
     .container {
-        width: 970px;
-    }
-}
+        width: 70%px;
+        margin: auto;
+    }  */
 
-@media (max-width: 414px) {
+@media (max-width: 375px) {
+
+
+    #gameTitle {
+        margin-top: 1%;
+        text-align: center;
+        text-shadow: 2px 2px 4px #99cc00;
+        font-size: 1.3em;
+    }
+
     .liActive,
     .liDisabled,
     .liSelected {
@@ -169,9 +214,12 @@ a:visited {
     }
     .keyboard .keyboard-body {
         padding: 12px 0px 0px 12px;
-        background-color: #222;
+        
     }
     
    
-   
+   #footernav{
+       display: none;
+   }
 }
+
