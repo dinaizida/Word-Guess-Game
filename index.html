@@ -63,7 +63,32 @@
                 </div>
             </div>
         </div>
-
+        <div id="footernav" class="navbar navbar-default fixed-bottom">
+            <div class="container">
+                <div class="copy">
+                    Copyright &copy; <span id="copyright_year"></span> Designed by Dina Rudenko at <a target="_blank" href="http://businessonwww.com/">BusinessOnWWW.com</a> | Austin Texas Web Design | All Rights Reserved.
+                </div>
+                <script>
+                    function init() {
+                        getCopyrightYear();
+                    }
+    
+                    function getCopyrightYear() {
+                        var d = new Date();
+                        var thisYear = d.getFullYear();
+                        document.getElementById("copyright_year").innerHTML = thisYear;
+                    }
+                    window.onload = init;
+                </script>
+    
+                <!-- <div class="social">
+                    <a href="https://github.com/dinaizida" target="_blank"><i style="font-size:16px" class="fa">&#xf092;</i></a>
+                    <a href="https://www.linkedin.com/in/DinaRudenko/" target="_blank"><i style="font-size:16px" class="fa">&#xf08c;</i></a>
+                    <a href="https://stackoverflow.com/users/6179580/dina" target="_blank"><i style="font-size:16px" class="fa">&#xf16c;</i></a>
+                    <a href="https://www.facebook.com/businessonwww/" target="_blank"><i style="font-size:16px" class="fa">&#xf082;</i></a>
+                </div> -->
+            </div>
+        </div>
     
 
     <script src="assets/javascript/game.js"></script>
