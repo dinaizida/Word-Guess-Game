@@ -7,37 +7,47 @@ body {
     color: #ddd;
     text-align: center;
     font-family: 'Noto Sans', sans-serif, 'Roboto', sans-serif;
+    font-size: 1.2em;
 }
 img {
     width: 100%;
     height: auto;
 }
+ .wrapper{
+     min-height: 100vh;
+ }
 
-
-.margin-top-down {
-    margin-top: 10%;
-}
 #instruction {
     text-align: center;
     
 }
 .statistic {
-    background-color: rgb(238, 230, 230);
+    background-color: #F5DAE3;
     opacity: 0.8;
     padding: 20px;
     margin-top: 5%;
     margin-left: 30%;
     margin-right: 30%;
-    -webkit-box-shadow: inset 3px 6px 51px -12px rgba(0,0,0,1);
-    -moz-box-shadow: inset 3px 6px 51px -12px rgba(0,0,0,1);
-    box-shadow: inset 3px 6px 51px -12px rgba(0,0,0,1);
+    -webkit-box-shadow: inset 3px 6px 51px -12px rgb(91, 86, 160);
+    -moz-box-shadow: inset 3px 6px 51px -12px rgba(91, 86, 160);
+    box-shadow: inset 3px 6px 51px -12px rgba(91, 86, 160);
     border-radius: 10px 10px 10px 10px;
 -moz-border-radius: 10px 10px 10px 10px;
 -webkit-border-radius: 10px 10px 10px 10px;
-border: 0px solid #000000;
+
 }
 #gameWord {
-    margin-bottom: 6px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    padding: 5px 2px;
+   
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+
+    -webkit-box-shadow: 3px 5px 36px -5px rgb(91, 86, 160);
+    -moz-box-shadow: 3px 5px 36px -5px rgb(91, 86, 160);
+    box-shadow: 3px 5px 36px -5px rgb(91, 86, 160);
 }
 
 
@@ -46,7 +56,10 @@ border: 0px solid #000000;
 #instruction {
     color: #6b5496;
 }
+#gameWord{
 
+    padding: 20px 0px;
+}
 #instruction {
     padding-bottom: 5px;
     
@@ -59,14 +72,15 @@ border: 0px solid #000000;
 }
 #word {
     
-    font-size: 2.5em;
-    border-radius: 10px 10px 10px 10px;
--moz-border-radius: 10px 10px 10px 10px;
--webkit-border-radius: 10px 10px 10px 10px;
+    font-size: 1.4em;
+   
+    border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
+-webkit-border-radius: 20px 20px 20px 20px;
 
 }
 #clear {
-    margin: 10px;
+    margin: 30px;
 }
 .category {
     color: #6b5496;
@@ -79,9 +93,11 @@ border: 0px solid #000000;
 
 
 .message {
-    font-size: 1.7em;
-    color: red;
+    font-size: 2.7em;
+   
+    color: #A74061;
     font-weight: bold;
+    text-shadow: 5px 5px 4px #E7A5BA; 
 }
 
 
@@ -89,10 +105,11 @@ border: 0px solid #000000;
 /* header */
 
  .headerTitle {
-    font-size: 1em;
+    font-size: 0.5em;
     text-align: center;
     color: #d15079;
-    text-shadow: 2px 2px 4px gray;
+    text-shadow: 3px 3px 12px #6f77b2; 
+    margin: 10px auto;
 }
 
 h1 {
@@ -104,16 +121,18 @@ h1 {
 
 
 .keyboard-body {
+    background-color: #F5DAE3;
+    opacity: 0.8;
     border: 1px white;
     padding: 20px 10px 10px 10px;
-    margin: 10% 20% 30% 20%;
+    margin: 5% 20% 40px 20%;
     border-radius: 10px 10px 10px 10px;
 -moz-border-radius: 10px 10px 10px 10px;
 -webkit-border-radius: 10px 10px 10px 10px;
-border: 0px solid #000000;
-    -webkit-box-shadow: 5px 5px 17px -4px rgba(0,0,0,0.52);
-    -moz-box-shadow: 5px 5px 17px -4px rgba(0,0,0,0.52);
-    box-shadow: 5px 5px 17px -4px rgba(0,0,0,0.52);
+
+-webkit-box-shadow: 13px 20px 103px -16px rgba(0,0,0,0.59);
+-moz-box-shadow: 13px 20px 103px -16px rgba(0,0,0,0.59);
+box-shadow: 13px 20px 103px -16px rgba(0,0,0,0.59);
     margin-bottom: 30px;
     
    
@@ -129,13 +148,14 @@ border: 0px solid #000000;
     color: whitesmoke;
     margin: 5px;
     text-align: center;
+   
     
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     display: inline-block;
-    -webkit-box-shadow: 5px 5px 17px -4px rgba(0,0,0,0.52);
-    -moz-box-shadow: 5px 5px 17px -4px rgba(0,0,0,0.52);
-    box-shadow: 5px 5px 17px -4px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 3px 6px 96px -2px rgba(0,0,0,0.59);
+-moz-box-shadow: 3px 6px 96px -2px rgba(0,0,0,0.59);
+box-shadow: 3px 6px 96px -2px rgba(0,0,0,0.59);
 }
 
 .liActive li:hover {
@@ -182,25 +202,29 @@ a:visited {
 }
 
 
-/* media query */
-
-/* 
- @media (max-width: 1200px) {
-    .container {
-        width: 70%px;
-        margin: auto;
-    }  */
 
 @media (max-width: 375px) {
-
-
-    #gameTitle {
-        margin-top: 1%;
-        text-align: center;
-        text-shadow: 2px 2px 4px #99cc00;
-        font-size: 1.3em;
+    .statistic {
+        font-size: 0.8em;
+        opacity: 0.8;
+        padding: 15px 1px;
+       
+        margin: 1%  5% 1% 6%;
     }
-
+  .headerTitle {
+      font-size: 0.5em;
+  }
+  #clear {
+    margin: 30px;
+}
+  
+    #word {
+    
+        font-size: 1em;
+    }
+    #gameWord{
+        font-size: 1.2em;
+    }
     .liActive,
     .liDisabled,
     .liSelected {
