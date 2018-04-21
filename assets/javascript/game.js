@@ -1,6 +1,6 @@
-var winsCount = 0;
-var lossesCount = 0;
-var timeOver;
+var winsTotal = 0;
+var lostTotal = 0;
+
 
 // Game object
 var game = {
@@ -55,8 +55,8 @@ var game = {
         // display screen elements (game status)
         document.querySelector("#gameStatus").innerHTML = "";
         document.querySelector("#numberGuesses").innerHTML = this.numberGuesses;
-        document.querySelector("#winsCount").innerHTML = winsCount;
-        document.querySelector("#lossesCount").innerHTML = lossesCount;
+        document.querySelector("#winsTotal").innerHTML = winsTotal;
+        document.querySelector("#lostTotal").innerHTML = lostTotal;
         document.querySelector("#winlosses").style.display = 'inline-block';
 
     },
@@ -192,14 +192,14 @@ var game = {
     winLossesCountWithSound: function() {
         if (this.numberGuesses === 0) {
             this.playAudio('assets/sounds/gameLost.mp3');
-            lossesCount++;
+            lostTotal++;
             this.gameOver = true;
             this.winOrLose = false;
         }
 
         if (this.matchedLettersCount == this.computerWordLength) {
             this.playAudio('assets/sounds/gameWon.mp3');
-            winsCount++;
+            winsTotal++;
             this.winOrLose = true;
             this.gameOver = true;
         }
