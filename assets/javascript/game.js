@@ -205,7 +205,7 @@ var game = {
         }
     },
 
-    // start game again (every time in the end of the game prints result on the screen pause for 5 sec 
+    // start game again 
     startGameAgain: function() {
         if (this.gameOver === true) {
             var html = "";
@@ -230,13 +230,8 @@ var game = {
                     game.loadKeyboard();
                 });
 
-            // html += '<div class="load">New Word is loading. ';
-            // html += ' <i class="fa fa-spinner fa-spin" aria-hidden="true"></i> </div>';
-
             document.querySelector("#gameStatus").innerHTML = html;
-            // timeOver = setTimeout(this.loadKeyboard.bind(this), 5000);
-            // pause screen for 5 sec-to display on the screen the result of the game before starting loading a new one
-
+            
         }
     },
     // refresh keyboard for a new game and run toStart method to refresh all initial settings

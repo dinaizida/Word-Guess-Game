@@ -1,26 +1,28 @@
 body {
     line-height: 150%;
     background-image: url(../images/background1.png);
-    background-repeat:no-repeat; 
-    background-size:cover; 
-    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: #ddd;
     text-align: center;
     font-family: 'Noto Sans', sans-serif, 'Roboto', sans-serif;
     font-size: 1.2em;
 }
+
 img {
     width: 100%;
     height: auto;
 }
- .wrapper{
-     min-height: 100vh;
- }
+
+.wrapper {
+    min-height: 100vh;
+}
 
 #instruction {
     text-align: center;
-    
 }
+
 .statistic {
     background-color: #F5DAE3;
     opacity: 0.8;
@@ -32,56 +34,55 @@ img {
     -moz-box-shadow: inset 3px 6px 51px -12px rgba(91, 86, 160);
     box-shadow: inset 3px 6px 51px -12px rgba(91, 86, 160);
     border-radius: 10px 10px 10px 10px;
--moz-border-radius: 10px 10px 10px 10px;
--webkit-border-radius: 10px 10px 10px 10px;
-
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
 }
+
 #gameWord {
     margin-bottom: 20px;
     font-size: 1em;
     padding: 5px 2px;
-   
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
-
     -webkit-box-shadow: 3px 5px 36px -5px rgb(91, 86, 160);
     -moz-box-shadow: 3px 5px 36px -5px rgb(91, 86, 160);
     box-shadow: 3px 5px 36px -5px rgb(91, 86, 160);
 }
-
 
 #gameWord,
 #word,
 #instruction {
     color: #6b5496;
 }
-#gameWord{
 
+#gameWord {
     padding: 20px 0px;
 }
+
 #instruction {
     padding-bottom: 5px;
-    
 }
-#winlosses {
-    color: #d15079; 
-}  
-#styleNumber {
-    color: #d15079; 
-}
-#word {
-    
-    font-size: 1.4em;
-   
-    border-radius: 20px 20px 20px 20px;
--moz-border-radius: 20px 20px 20px 20px;
--webkit-border-radius: 20px 20px 20px 20px;
 
+#winlosses {
+    color: #d15079;
 }
+
+#styleNumber {
+    color: #d15079;
+}
+
+#word {
+    font-size: 1.4em;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+
 #clear {
     margin: 30px;
 }
+
 .category {
     color: #6b5496;
 }
@@ -90,25 +91,21 @@ img {
     color: #6f77b2;
 }
 
-
-
 .message {
     font-size: 2.7em;
-   
     color: #A74061;
     font-weight: bold;
-    text-shadow: 5px 5px 4px #E7A5BA; 
+    text-shadow: 5px 5px 4px #E7A5BA;
 }
-
 
 
 /* header */
 
- .headerTitle {
+.headerTitle {
     font-size: 0.5em;
     text-align: center;
     color: #d15079;
-    text-shadow: 3px 3px 12px #6f77b2; 
+    text-shadow: 3px 3px 12px #6f77b2;
     margin: 10px auto;
 }
 
@@ -117,8 +114,8 @@ h1 {
     text-align: center;
 }
 
-/* letter buttons */
 
+/* letter buttons */
 
 .keyboard-body {
     background-color: #F5DAE3;
@@ -127,15 +124,12 @@ h1 {
     padding: 20px 10px 10px 10px;
     margin: 5% 20% 40px 20%;
     border-radius: 10px 10px 10px 10px;
--moz-border-radius: 10px 10px 10px 10px;
--webkit-border-radius: 10px 10px 10px 10px;
-
--webkit-box-shadow: 13px 20px 103px -16px rgba(0,0,0,0.59);
--moz-box-shadow: 13px 20px 103px -16px rgba(0,0,0,0.59);
-box-shadow: 13px 20px 103px -16px rgba(0,0,0,0.59);
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 13px 20px 103px -16px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: 13px 20px 103px -16px rgba(0, 0, 0, 0.59);
+    box-shadow: 13px 20px 103px -16px rgba(0, 0, 0, 0.59);
     margin-bottom: 30px;
-    
-   
 }
 
 .liActive,
@@ -148,14 +142,12 @@ box-shadow: 13px 20px 103px -16px rgba(0,0,0,0.59);
     color: whitesmoke;
     margin: 5px;
     text-align: center;
-   
-    
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     display: inline-block;
-    -webkit-box-shadow: 3px 6px 96px -2px rgba(0,0,0,0.59);
--moz-box-shadow: 3px 6px 96px -2px rgba(0,0,0,0.59);
-box-shadow: 3px 6px 96px -2px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 3px 6px 96px -2px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: 3px 6px 96px -2px rgba(0, 0, 0, 0.59);
+    box-shadow: 3px 6px 96px -2px rgba(0, 0, 0, 0.59);
 }
 
 .liActive li:hover {
@@ -169,11 +161,12 @@ box-shadow: 3px 6px 96px -2px rgba(0,0,0,0.59);
 
 .liDisabled {
     background-color: lightgrey;
-    
 }
+
 .liSelected {
     background-color: #6f77b2;
 }
+
 
 /*footer*/
 
@@ -184,7 +177,6 @@ box-shadow: 3px 6px 96px -2px rgba(0,0,0,0.59);
     text-align: center;
     padding: 5px;
     margin: 0 auto;
-    
 }
 
 #footernav a:link,
@@ -201,28 +193,23 @@ a:visited {
     margin: 0 auto;
 }
 
-
-
 @media (max-width: 375px) {
     .statistic {
         font-size: 0.8em;
         opacity: 0.8;
         padding: 15px 1px;
-       
-        margin: 1%  5% 1% 6%;
+        margin: 1% 5% 1% 6%;
     }
-  .headerTitle {
-      font-size: 0.5em;
-  }
-  #clear {
-    margin: 30px;
-}
-  
+    .headerTitle {
+        font-size: 0.5em;
+    }
+    #clear {
+        margin: 30px;
+    }
     #word {
-    
         font-size: 1em;
     }
-    #gameWord{
+    #gameWord {
         font-size: 1.2em;
     }
     .liActive,
@@ -238,12 +225,8 @@ a:visited {
     }
     .keyboard .keyboard-body {
         padding: 12px 0px 0px 12px;
-        
     }
-    
-   
-   #footernav{
-       display: none;
-   }
+    #footernav {
+        display: none;
+    }
 }
-

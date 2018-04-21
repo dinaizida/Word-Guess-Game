@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
- 
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="shortcut icon" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,104 +17,97 @@
     <title>Word Guess Game</title>
 </head>
 
-
-
-    <body>
-    <div class ="wrapper"> 
-    <div class ="row">  
-    <div class = "col-md-12 col-lg-12 col-sm-12 col-xs-12">
-      
-        
-        <!-- Main section -->
-        <div class="container-flex">
-            <!-- instructions for a game  -->
-
-            <div class = "row headerTitle">
+<body>
+    <div class="wrapper">
+        <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <h1>Word Guess Game</h1>
-        
-          
-            
-            
-            </div>
-           </div>
 
-            <div class="row">
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <p id="instruction">
-                           
-                        Press Any Letter to Start.
-                        <br>Category : <span class="category"> US States</span>
-                        <br><span id="warningMessage"></span>
-                    </p>
-                </div>
-            </div>
-            <!-- game status information  -->
-            <div class="row statistic">
+                <!-- Main section -->
+                <div class="container-flex">
+                    <!-- instructions for a game  -->
 
-                <div class="col-md-12">
+                    <div class="row headerTitle">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                            <h1>Word Guess Game</h1>
 
-                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div id="gameStatus"></div>
-                        <div id="winlosses">
-                            <div>Wins : <span id="winsTotal"></span></div>
-                            <div>Losses : <span id="lostTotal"></span></div>
                         </div>
-                        <div id="styleNumber">Number of Guesses Remaining : <span id="numberGuesses">10</span></div>
-                        <br>
-                        <br>
-                        <div id="gameWord"><b>Word : &nbsp;&nbsp;<span id="word"></span></b></div>
                     </div>
-                    
+
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                            <p id="instruction">
+
+                                Press Any Letter to Start.
+                                <br>Category : <span class="category"> US States</span>
+                                <br><span id="warningMessage"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- game status information  -->
+                    <div class="row statistic">
+
+                        <div class="col-md-12">
+
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                <div id="gameStatus"></div>
+                                <div id="winlosses">
+                                    <div>Wins : <span id="winsTotal"></span></div>
+                                    <div>Losses : <span id="lostTotal"></span></div>
+                                </div>
+                                <div id="styleNumber">Number of Guesses Remaining : <span id="numberGuesses">10</span></div>
+                                <br>
+                                <br>
+                                <div id="gameWord"><b>Word : &nbsp;&nbsp;<span id="word"></span></b></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- buttons with letters- keyboard-->
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="keyboard panel-default">
+                            <div class="keyboard-body">
+                                <div id="keyboardBtn"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footernav" class="navbar navbar-default fixed-bottom">
+                    <div class="container">
+                        <div class="copy">
+                            Copyright &copy; <span id="copyright_year"></span> Designed by Dina Rudenko at <a target="_blank" href="http://businessonwww.com/">BusinessOnWWW.com</a> | Austin Texas Web Design | All Rights Reserved.
+                        </div>
+                        <script>
+                            function init() {
+                                getCopyrightYear();
+                            }
+
+                            function getCopyrightYear() {
+                                var d = new Date();
+                                var thisYear = d.getFullYear();
+                                document.getElementById("copyright_year").innerHTML = thisYear;
+                            }
+                            window.onload = init;
+                        </script>
+
+                        <div class="social">
+                            <a href="https://github.com/dinaizida" target="_blank"><i style="font-size:16px" class="fa">&#xf092;</i></a>
+                            <a href="https://www.linkedin.com/in/DinaRudenko/" target="_blank"><i style="font-size:16px" class="fa">&#xf08c;</i></a>
+                            <a href="https://stackoverflow.com/users/6179580/dina" target="_blank"><i style="font-size:16px" class="fa">&#xf16c;</i></a>
+                            <a href="https://www.facebook.com/businessonwww/" target="_blank"><i style="font-size:16px" class="fa">&#xf082;</i></a>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-            <!-- buttons with letters- keyboard-->
-            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                <div class="keyboard panel-default">
-                    <div class="keyboard-body">
-                        <div id="keyboardBtn"></div>
-                        
-                    </div>
-                </div>
+                <script src="assets/javascript/game.js"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
             </div>
         </div>
-        <div id="footernav" class="navbar navbar-default fixed-bottom">
-            <div class="container">
-                <div class="copy">
-                    Copyright &copy; <span id="copyright_year"></span> Designed by Dina Rudenko at <a target="_blank" href="http://businessonwww.com/">BusinessOnWWW.com</a> | Austin Texas Web Design | All Rights Reserved.
-                </div>
-                <script>
-                    function init() {
-                        getCopyrightYear();
-                    }
-    
-                    function getCopyrightYear() {
-                        var d = new Date();
-                        var thisYear = d.getFullYear();
-                        document.getElementById("copyright_year").innerHTML = thisYear;
-                    }
-                    window.onload = init;
-                </script>
-    
-                <div class="social">
-                    <a href="https://github.com/dinaizida" target="_blank"><i style="font-size:16px" class="fa">&#xf092;</i></a>
-                    <a href="https://www.linkedin.com/in/DinaRudenko/" target="_blank"><i style="font-size:16px" class="fa">&#xf08c;</i></a>
-                    <a href="https://stackoverflow.com/users/6179580/dina" target="_blank"><i style="font-size:16px" class="fa">&#xf16c;</i></a>
-                    <a href="https://www.facebook.com/businessonwww/" target="_blank"><i style="font-size:16px" class="fa">&#xf082;</i></a>
-                </div>
-            </div>
-        </div>
-    
-
-    <script src="assets/javascript/game.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</div>
-</div> 
-</div>
+    </div>
 </body>
 
 </html>
