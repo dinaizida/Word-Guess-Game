@@ -11,4 +11,4 @@ The goal of this game is to arrange the letters and fill in the blanks to find t
 
 Audio files :  http://www.freesfx.co.uk
 
-![Screen Shot](https://github.com/dinaizida/Word-Guess-Game/blob/master/assets/images/portfolio_wordGame.png)
+![Screen Shot](https://github.com/dinaizida/Word-Guess-Game/blob/master/assets/images/git.png)
