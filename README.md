@@ -10,3 +10,5 @@ Word Guess Game with dynamically updated HTML using JavaScript and jQuery librar
 The goal of this game is to arrange the letters and fill in the blanks to find the scrambled word. 
 
 Audio files :  http://www.freesfx.co.uk
+
+![Screen Shot](https://github.com/dinaizida/Word-Guess-Game/assets/images/portfolio_wordGame.png)
